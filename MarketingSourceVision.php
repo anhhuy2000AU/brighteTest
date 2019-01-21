@@ -1,0 +1,67 @@
+<?php
+
+/*
+ *
+ * This file is part of PHP CS Fixer.
+ *
+ *
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *
+ *     Dariusz Rumiński <dariusz.ruminski@gmail.com>
+ *
+ *
+ *
+ * This source file is subject to the MIT license that is bundled
+ *
+ * with this source code in the file LICENSE.
+ *
+ */
+
+namespace BrighteTest;
+
+/**
+ * Class MarketingSourceVision.
+ */
+class MarketingSourceVision implements IMarketingSource
+{
+    /**
+     * @param $campaignId
+     *
+     * @return mixed|void
+     */
+    public function load($campaignId)
+    {
+        // TODO: Implement load() method.
+    }
+
+    /**
+     * @param $campaign
+     *
+     * @return mixed|void
+     */
+    public function save($campaign)
+    {
+        // TODO: Implement save() method.
+    }
+
+    /**
+     * @param $campaign
+     *
+     * @return mixed|void
+     */
+    public function update($campaign)
+    {
+        // TODO: Implement update() method.
+    }
+
+    /**
+     * @param $campaignId
+     *
+     * @return mixed|void
+     */
+    public function delete($campaignId)
+    {
+        // TODO: Implement delete() method.
+    }
+}
