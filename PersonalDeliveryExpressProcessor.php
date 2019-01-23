@@ -33,7 +33,7 @@ class PersonalDeliveryExpressProcessor implements IDeliveryProcessor
     public function processDelivery($delivery)
     {
         // TODO: Implement custom processDelivery() method as each delivery type can have a different workflow.
-        echo 'Doing custom work flow for Personal Delivery Express';
+        echo '<b>Doing custom work flow for Personal Delivery Express</b><br>';
 
         return true;
     }

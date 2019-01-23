@@ -20,6 +20,7 @@
 
 namespace BrighteTest;
 
+include ('IValidator.php');
 /**
  * Class EnterpriseValidator.
  */
@@ -32,7 +33,7 @@ class EnterpriseValidator implements IValidator
      */
     public function validate($delivery)
     {
-        echo 'Validating Enterprise using 3rd party API';
+        echo 'Validating Enterprise using 3rd party API<br>';
 
         return $delivery;
     }

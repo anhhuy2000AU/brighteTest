@@ -20,6 +20,7 @@
 
 namespace BrighteTest;
 
+include ('IMarketingSource.php');
 /**
  * Class MarketingSourceVision.
  */
@@ -33,6 +34,7 @@ class MarketingSourceVision implements IMarketingSource
     public function load($campaignId)
     {
         // TODO: Implement load() method.
+        echo 'Loading Vision Marketing Campaign<br>';
     }
 
     /**
@@ -43,6 +45,7 @@ class MarketingSourceVision implements IMarketingSource
     public function save($campaign)
     {
         // TODO: Implement save() method.
+        echo 'Saving Vision Marketing Campaign<br>';
     }
 
     /**
@@ -53,6 +56,7 @@ class MarketingSourceVision implements IMarketingSource
     public function update($campaign)
     {
         // TODO: Implement update() method.
+        echo 'Updating Vision Marketing Campaign<br>';
     }
 
     /**
@@ -63,5 +67,6 @@ class MarketingSourceVision implements IMarketingSource
     public function delete($campaignId)
     {
         // TODO: Implement delete() method.
+        echo '<br>Deleting Vision Marketing Campaign<br>';
     }
 }

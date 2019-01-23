@@ -35,27 +35,10 @@ namespace BrighteTest;
  * @see      http://arctg.com
  * @since 1.0.1
  */
+include ('IDeliveryProcessor.php');
+
 class EnterpriseDeliveryProcessor implements IDeliveryProcessor
 {
-    /**
-     * @var
-     * $_validator - validator class*/
-    private $_validator;
-
-    /**
-     * Set up the validator for validation
-     *
-     * @param IValidator
-     *
-     * @return IValidator
-     *
-     * @since 1.0.1
-     */
-    public function setValidator(IValidator $validator)
-    {
-        return $this->_validator = $validator;
-    }
-
     /**
      * Process different work flow based on delivery type.
      *
@@ -68,23 +51,8 @@ class EnterpriseDeliveryProcessor implements IDeliveryProcessor
     public function processDelivery($delivery)
     {
         // TODO: Implement custom processDelivery() method as each delivery type can have a different workflow.
-        echo 'Doing custom work flow for Enterprise Delivery';
+        echo '<b>Doing custom work flow for Enterprise Delivery</b><br>';
 
         return true;
-    }
-
-    /**
-     * Validating Enterprise
-     *
-     * @param IValidator, $delivery
-     *
-     * @return Boolean
-     *
-     * @since 1.0.1
-     */
-    public function validateEnterprise(IValidator $validator, $delivery)
-    {
-        // Validate Enterprise
-        return $validator->validate($delivery);
     }
 }
